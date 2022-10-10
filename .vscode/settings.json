@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "Notes\\.obsidian": true,
+    "mindmap.png": true,
+    ".vscode": true
+  }
+}
