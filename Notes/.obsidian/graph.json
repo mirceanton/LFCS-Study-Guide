@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"LFCS/Topics/Essential Commands\"",
@@ -15,10 +15,38 @@
       }
     },
     {
-      "query": "path:\"LFCS/Topics/User and Group Management\"",
+      "query": "path:\"LFCS/Topics/Operation of Running Systems\"",
       "color": {
         "a": 1,
         "rgb": 5387776
+      }
+    },
+    {
+      "query": "path:\"Topics/User and Group Management\"",
+      "color": {
+        "a": 1,
+        "rgb": 5066570
+      }
+    },
+    {
+      "query": "path:Topics/Networking",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"Topics/Service Configuration\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:\"Topics/Storage Management\"",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
       }
     }
   ],
@@ -28,10 +56,10 @@
   "nodeSizeMultiplier": 1.06324786324786,
   "lineSizeMultiplier": 2.06837606837607,
   "collapse-forces": false,
-  "centerStrength": 0.292134831460674,
+  "centerStrength": 0.73876404494382,
   "repelStrength": 20,
-  "linkStrength": 1,
+  "linkStrength": 0.74438202247191,
   "linkDistance": 30,
-  "scale": 1.0000000000000082,
+  "scale": 0.25883865621816915,
   "close": false
 }
