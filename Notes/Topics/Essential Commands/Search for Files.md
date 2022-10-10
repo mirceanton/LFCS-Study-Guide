@@ -28,7 +28,7 @@ find . -name file* # all files starting with file...
 
 - Find files modified MORE than 5 minutes ago
   ```bash
-  find . -mmin +4
+  find . -mmin +5
   ```
 
 - Files with permissions changed in the last 5 mintues

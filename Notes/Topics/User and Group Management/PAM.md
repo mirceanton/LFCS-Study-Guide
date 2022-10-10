@@ -1,3 +1,1 @@
-Section: [[User and Group Management]]
-
-## PAM
+# PAM

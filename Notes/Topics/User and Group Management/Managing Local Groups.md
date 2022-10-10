@@ -1,3 +1,1 @@
-Section: [[User and Group Management]]
-
-## Managing Local Groups
+# Managing Local Groups

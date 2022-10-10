@@ -1,3 +1,1 @@
-Section: [[User and Group Management]]
-
-## Managing User Privileges
+# Managing User Privileges
