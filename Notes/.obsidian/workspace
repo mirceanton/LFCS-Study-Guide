@@ -121,15 +121,15 @@
   },
   "active": "96ed29850e39a6a4",
   "lastOpenFiles": [
-    "Topics/Essential Commands/Search for Files.md",
-    "Topics/Essential Commands/File Permissions.md",
+    "Topics/Essential Commands/SUID.md",
     "LFCS.md",
-    "Topics/User and Group Management/System-wide Environment Profiles.md",
-    "LFCS/Topics/Essential Commands/Search for Files.md",
-    "LFCS/Topics/Essential Commands/SGID.md",
-    "LFCS/Topics/Essential Commands/Sticky Bit.md",
-    "Find files.md",
-    "LFCS/Topics/Essential Commands/SUID.md",
-    "LFCS/Topics/Essential Commands/Managing Files.md"
+    "Topics/Essential Commands/Managing directories.md",
+    "Topics/Essential Commands/Hard Links.md",
+    "Topics/Essential Commands/Search for Files.md",
+    "Topics/Service Configuration.md",
+    "Topics/Operation of Running Systems.md",
+    "Topics/User and Group Management.md",
+    "Topics/Essential Commands.md",
+    "Topics/Storage Management.md"
   ]
 }
