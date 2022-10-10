@@ -1,0 +1,135 @@
+{
+  "main": {
+    "id": "a2b4e86770f45842",
+    "type": "split",
+    "children": [
+      {
+        "id": "96ed29850e39a6a4",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "338956610db19068",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b735af798582ad4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90f867b0610bd94d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "725866d2fa4c6add",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54186a6010f41b3f",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 419.5
+  },
+  "right": {
+    "id": "9c646dc56655fb6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0bcdc2892fb5c05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8d2b86739a59589",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "afd1f312071c86b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b92dde8a5e819e22",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "62570d2b88054993",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "96ed29850e39a6a4",
+  "lastOpenFiles": [
+    "LFCS/Topics/Essential Commands/Search for Files.md",
+    "LFCS/Topics/Essential Commands/SGID.md",
+    "LFCS/Topics/Essential Commands/Sticky Bit.md",
+    "Find files.md",
+    "LFCS/Topics/Essential Commands/SUID.md",
+    "LFCS/Topics/Essential Commands/Managing Files.md",
+    "LFCS/Topics/Essential Commands/System Documentation.md",
+    "LFCS/Topics/Essential Commands/File Permissions.md",
+    "LFCS/Topics/Essential Commands/Soft Links.md",
+    "LFCS/Topics/Essential Commands/Hard Links.md"
+  ]
+}

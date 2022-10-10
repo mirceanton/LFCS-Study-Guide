@@ -1,0 +1,37 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"LFCS/Topics/Essential Commands\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"LFCS/Topics/User and Group Management\"",
+      "color": {
+        "a": 1,
+        "rgb": 5387776
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.06324786324786,
+  "lineSizeMultiplier": 2.06837606837607,
+  "collapse-forces": false,
+  "centerStrength": 0.292134831460674,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 1.0000000000000082,
+  "close": false
+}
