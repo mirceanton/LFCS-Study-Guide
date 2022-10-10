@@ -1,12 +1,12 @@
 # Essential Commands
 
-## Topics:
+## Topics
 
-- [[File Permissions]]
-- [[Hard Links]]
 - [[Logging in to local & remote systems]]
-- [[Managing directories]]
-- [[Managing Files]]
-- [[Search for Files]]
-- [[Soft Links]]
 - [[System Documentation]]
+- [[Managing Files]]
+- [[Managing directories]]
+- [[Hard Links]]
+- [[Soft Links]]
+- [[File Permissions]]
+- [[Search for Files]]

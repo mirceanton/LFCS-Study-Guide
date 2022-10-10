@@ -22,6 +22,13 @@
 
 ## Other Resources
 
+**Highly recommended materials**:
+
+- [KodeKloud LFCS Course](https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/) (includes mock exams)
+- [KodeKloud Linux Challenges](https://kodekloud.com/courses/linux-challenges/)
+
+**Other materials**:
+
 - [Medium Blog Post](https://ozguryarikkas.medium.com/lfcs-linux-foundation-system-administrator-exam-study-guide-with-exercises-part-1-d9ddc9efc39f)
 - [Official Study Guide](https://training.linuxfoundation.org/wp-content/uploads/2019/04/LFCS-Study-Guide-v1.1.pdf)
 - [Testprep Training tutorial](https://www.testpreptraining.com/tutorial/linux-foundation-certified-system-administrator-lfcs/)
