@@ -1,32 +1,53 @@
-## Sticky Bit
+# Sticky Bit
 
-- Set on directories
+- Set on directories, not files.
 - Only allows the user that owns a file inside the directory to remove it.
 
-### Set Sticky Bit
+## Set Sticky Bit
 
 - via octal value
-  ```bash
-  chmod 1775 dir_name
-  ```
-  ![[Pasted image 20221010181643.png]]
+```bash
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-x 2 mike mike 4096 Oct 11 22:04 sticky_dir
+mike@lfcs:~/demo$ chmod 1775 sticky_dir/
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-t 2 mike mike 4096 Oct 11 22:04 sticky_dir
+```
 
 - via human-readable value
-  ```bash
-  chmod +t dir_name
-  ```
-  ![[Pasted image 20221010181707.png]]
+```bash
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-x 2 mike mike 4096 Oct 11 22:04 sticky_dir
+mike@lfcs:~/demo$ chmod +t sticky_dir/
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-t 2 mike mike 4096 Oct 11 22:04 sticky_dir
+```
 
-### Get Sticky Bit
+## Get Sticky Bit
 
 ```bash
 ls -l dir_name
 ```
 
 - capital T -> Sticky bit set, no execute permission
-  ![[Pasted image 20221010181819.png]]
+```bash
+mike@lfcs:~/demo$ chmod +t,o-x sticky_dir/
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-T 2 mike mike 4096 Oct 11 22:04 sticky_dir
+```
+
 - lowercase T -> Sticky bit set, with execute permission
-  ![[Pasted image 20221010181826.png]]
+```bash
+mike@lfcs:~/demo$ chmod +t sticky_dir/
+mike@lfcs:~/demo$ ls -l
+total 4
+drwxrwxr-t 2 mike mike 4096 Oct 11 22:04 sticky_dir
+```
 
 ## See also
 

@@ -1,6 +1,6 @@
-Section: [[Essential Commands]]
+# Read, and use system documentation
 
-## If you know what command to use:
+## If we know what command to use
 
 ### Use the `--help` flag on most commands
 
@@ -30,7 +30,7 @@ Examples:
   cat f - g  Output f's contents, then standard input, then g's contents.
   cat        Copy standard input to standard output.
 ```
- 
+
 ### Read the man pages
 
 ``` bash
@@ -39,7 +39,7 @@ man <command>
 
 ## If you don't know what command to use
 
-The apropos command can show a list of commands that have the given keyword in their manpages
+The apropos command can show a list of commands that have the given keyword in their manpages.
 
 ```bash
 $ apropos ssh
@@ -74,6 +74,7 @@ XtIsShell (3)        - obtain and verify a widget's class
 ```
 
 - If the apropos command is not working, refresh the database with
-  ``` bash
-  sudo mandb
-  ```
+
+``` bash
+sudo mandb
+```
