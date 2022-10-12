@@ -40,6 +40,58 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    - navigation.tabs
     - search.share
     - search.suggest
     - toc.follow
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# =================================================================================================
+# Navigation Layout
+# =================================================================================================
+nav:
+  - index.md
+
+  - Topics:
+    - Essential Commands:
+      - Index: Topics/Essential_Commands/index.md
+      - Log into local & remote graphical and text mode consoles: Topics/Essential_Commands/Log into local & remote graphical and text mode consoles.md
+      - Read, and use system documentation: Topics/Essential_Commands/Read, and use system documentation.md
+      - Create, delete, copy, and move files and directories: Topics/Essential_Commands/Create, delete, copy, and move files and directories.md
+      - Create and manage hard and soft links: Topics/Essential_Commands/Create and manage hard and soft links.md
+      - List, set, and change standard file permissions: Topics/Essential_Commands/List, set, and change standard file permissions.md
+      - Advanced File Permissions:
+        - SUID: Topics/Essential_Commands/SUID.md
+        - SGID: Topics/Essential_Commands/SGID.md
+        - Sticky Bit: Topics/Essential_Commands/Sticky Bit.md
+      - Search for Files: Topics/Essential_Commands/Search for Files.md
+      - Compare and manipulate file content: Topics/Essential_Commands/Compare and manipulate file content.md
+      - Search for Files: Topics/Essential_Commands/Search for Files.md
+      - Analyze text using basic regular expressions: Topics/Essential_Commands/Analyze text using basic regular expressions.md
+      - Archive, backup, compress, unpack, and uncompress files: Topics/Essential_Commands/Archive, backup, compress, unpack, and uncompress files.md
+      - Input-Output redirection: Topics/Essential_Commands/Input-Output redirection.md
+
+    - Operation of Running Systems:
+      - Index: Topics/Operation_of_Running_Systems/index.md
+      
+    - User and Group Management:
+      - Index: Topics/User_and_Group_Management/index.md
+      - Managing Local Users: Topics/User_and_Group_Management/Managing Local Users.md
+      - Managing Local Groups: Topics/User_and_Group_Management/Managing Local Groups.md
+      - System-wide Environment Profiles: Topics/User_and_Group_Management/System-wide Environment Profiles.md
+      - Template User Environment: Topics/User_and_Group_Management/Template User Environment.md
+      - Manage User Privileges: Topics/User_and_Group_Management/Manage User Privileges.md
+      - Configure PAM: Topics/User_and_Group_Management/Configure PAM.md
+
+    - Networking:
+      - Index: Topics/Networking/index.md
+      
+    - Service Configuration:
+      - Index: Topics/Service_Configuration/index.md
+
+    - Storage Management:
+      - Index: Topics/Storage_Management/index.md
