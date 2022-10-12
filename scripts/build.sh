@@ -42,5 +42,6 @@ cp Notes/Topics/Storage*Management.md docs/Topics/Storage_Management/index.md
 cp Notes/Topics/Storage*Management/*.md docs/Topics/Storage_Management/
 
 echo "- Format markdown"
-find docs/Topics/ -type f -exec sed -i 's/\[\[//g' {} \;
-find docs/Topics/ -type f -exec sed -i 's/\]\]//g' {} \;
+find docs/ -type f -exec sed -i 's/\[\[//g' {} \;
+find docs/ -type f -exec sed -i 's/\]\]//g' {} \;
+find docs/ -type f -exec sed -i 's/\[o\]/\[x\]/g' {} \;
