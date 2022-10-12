@@ -22,7 +22,12 @@
   head -n <N> <filename>
   ```
 
-## Find and replace
+- Paginating through a large file
+  ```bash
+  less <filename>
+  ```
+
+## Find and Replace
 
 - First occurence
   ```bash
@@ -76,8 +81,46 @@
   sdiff <file1> <file2>
   ```
 
-## Searching file contents
+## Searching files
 
 ```bash
-grep
+grep [options] [search_pattern] [file]
+```
+
+- Search case sensitive
+```bash
+mike@lfcs:~/LFCS-Study-Guide$ grep 'study' README.md 
+LFCS-study-guide
+An obsidian vault I created while studying for the LFCS Certification.
+```
+
+- Search case insensitive
+```bash
+mike@lfcs:~/LFCS-Study-Guide$ grep 'lfcs' README.md 
+mike@lfcs:~/LFCS-Study-Guide$ grep -i 'lfcs' README.md 
+LFCS-study-guide
+An obsidian vault I created while studying for the LFCS Certification.
+mike@lfcs:~/LFCS-Study-Guide$ 
+```
+
+- Search all files in directory
+```bash
+mike@lfcs:~/LFCS-Study-Guide$ grep "Manipulating file contents" -r ./
+./Notes/Topics/Essential Commands/Compare and manipulate file content.md:# Manipulating file contents
+```
+
+- Invert search query
+```bash
+mike@lfcs:~/LFCS-Study-Guide$ grep -vi 'lfcs' README.md 
+================
+
+
+![mindmap](mindmap.png)
+```
+
+- Only print matching
+```bash
+mike@lfcs:~/LFCS-Study-Guide$ grep -oi 'lfcs' README.md 
+LFCS
+LFCS
 ```
