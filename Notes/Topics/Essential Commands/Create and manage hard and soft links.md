@@ -8,7 +8,7 @@
 ## Creating a hard link
 
 ```bash
-ln /path/to/link /path/to/hardlink
+ln /path/to/file /path/to/hardlink
 ```
 
 ## Limitations
