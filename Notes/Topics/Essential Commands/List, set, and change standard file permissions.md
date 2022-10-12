@@ -66,8 +66,4 @@ Other examples:
   chmod u-rwx file_name
   ```
 
-## Special permissions
-
-- [[SUID]]
-- [[SGID]]
-- [[Sticky Bit]]
+![[Advanced File Permissions]]
