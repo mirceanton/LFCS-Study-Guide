@@ -4,9 +4,9 @@
 
 - [o] [[Log into local & remote graphical and text mode consoles]]
 - [o] [[Search for files]]
-- [ ] [[Compare and manipulate file content]]
+- [o] [[Compare and manipulate file content]]
 - [o] [[Input-Output redirection]]
-- [ ] [[Analyze text using basic regular expressions]]
+- [o] [[Analyze text using basic regular expressions]]
 - [o] [[Archive, backup, compress, unpack, and uncompress files]]
 - [o] [[Create, delete, copy, and move files and directories]]
 - [o] [[Create and manage hard and soft links]]
