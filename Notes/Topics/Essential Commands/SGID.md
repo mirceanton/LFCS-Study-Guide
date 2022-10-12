@@ -29,7 +29,7 @@ total 0
 -rw-rwSr-- 1 mike mike 0 Oct 11 21:59 sgid_file
 ```
 
-### Get SGID
+## Get SGID
 
 ```bash
 ls -l file_name

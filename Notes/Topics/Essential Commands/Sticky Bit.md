@@ -1,4 +1,4 @@
-# Sticky Bit
+# Advanced File Permissions: Sticky Bit
 
 - Set on directories, not files.
 - Only allows the user that owns a file inside the directory to remove it.

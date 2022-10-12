@@ -2,10 +2,10 @@
 
 ## Topics
 
-- [[Database]]
-- [[DNS]]
-- [[HTTP]]
-- [[IMAP]]
-- [[Managing Containers]]
-- [[Managing Virtual Machines]]
-- [[SSH]]
+- [ ] [[Database]]
+- [ ] [[DNS]]
+- [ ] [[HTTP]]
+- [ ] [[IMAP]]
+- [ ] [[Managing Containers]]
+- [ ] [[Managing Virtual Machines]]
+- [ ] [[SSH]]

@@ -2,8 +2,9 @@
 
 ## Topics
 
-- [[Managing Local Groups]]
-- [[Managing Local Users]]
-- [[Managing User Privileges]]
-- [[PAM]]
-- [[System-wide Environment Profiles]]
+- [o] [[Managing Local Groups]]
+- [o] [[Managing Local Users]]
+- [ ] [[System-wide Environment Profiles]]
+- [ ] [[Template User Environment]]
+- [ ] [[Managing User Privileges]]
+- [ ] [[Configure PAM]]

@@ -1,4 +1,4 @@
-# SUID
+# Advanced File Permissions: SUID
 
 - SUID = Set User IDentification bit
 - When set, the file is executed, it will be executed as the user owner of the file and not the user that is actually running the file.
@@ -27,7 +27,7 @@ total 0
 -rwSrw-r-- 1 mike mike 0 Oct 11 22:02 suid_file
 ```
 
-### Get SUID
+## Get SUID
 
 ```bash
 ls -l file_name
