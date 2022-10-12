@@ -1,2 +1,0 @@
-## Managin File Permissions
-
