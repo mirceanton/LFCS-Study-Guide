@@ -82,9 +82,9 @@ nav:
       - Index: Topics/User_and_Group_Management/index.md
       - Managing Local Users: Topics/User_and_Group_Management/Managing Local Users.md
       - Managing Local Groups: Topics/User_and_Group_Management/Managing Local Groups.md
+      - Managing User Privileges: Topics/User_and_Group_Management/Managing User Privileges.md
+      - Managing User Resource Limits: Topics/User_and_Group_Management/User Resource Limits.md
       - System-wide Environment Profiles: Topics/User_and_Group_Management/System-wide Environment Profiles.md
-      - Template User Environment: Topics/User_and_Group_Management/Template User Environment.md
-      - Manage User Privileges: Topics/User_and_Group_Management/Manage User Privileges.md
       - Configure PAM: Topics/User_and_Group_Management/Configure PAM.md
 
     - Networking:
