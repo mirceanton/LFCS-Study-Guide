@@ -1,7 +1,13 @@
 {
   "files.exclude": {
     "Notes\\.obsidian": true,
-    "mindmap.png": true,
-    ".vscode": true
+    ".vscode": true,
+    ".github\\workflows": true,
+    ".github": true,
+    "images": true,
+    "scripts": true,
+    ".gitignore": true,
+    "LICENSE": true,
+    "README.md": true
   }
 }
