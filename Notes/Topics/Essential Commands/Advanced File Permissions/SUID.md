@@ -48,9 +48,3 @@ mike@lfcs:~/demo$ ls -l
 total 0
 -rwsrw-r-- 1 mike mike 0 Oct 11 22:02 suid_file
 ```
-
-## See also
-
-- [[File Permissions]]
-- [[SGID]]
-- [[Sticky Bit]]

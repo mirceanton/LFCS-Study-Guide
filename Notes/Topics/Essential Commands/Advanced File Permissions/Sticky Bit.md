@@ -48,9 +48,3 @@ mike@lfcs:~/demo$ ls -l
 total 4
 drwxrwxr-t 2 mike mike 4096 Oct 11 22:04 sticky_dir
 ```
-
-## See also
-
-- [[File Permissions]]
-- [[SGID]]
-- [[SUID]]

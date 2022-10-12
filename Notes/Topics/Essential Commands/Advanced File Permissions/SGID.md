@@ -1,7 +1,7 @@
-# SGID
+# Advanced File Permissions: SGID
 
 - SGID = Set Group IDentification bit
-- Same as [[SUID]], but for the group. Executes the given file with the group of the executing user as the owner group instead of the group of the user that ran the file.
+- Same as SUID but for the group. Executes the given file with the group of the executing user as the owner group instead of the group of the user that ran the file.
 
 ## Set SGID
 
@@ -50,9 +50,3 @@ mike@lfcs:~/demo$ ls -l
 total 0
 -rw-rwsr-- 1 mike mike 0 Oct 11 21:59 sgid_file
 ```
-
-## See Also
-
-- [[File Permissions]]
-- [[SUID]]
-- [[Sticky Bit]]
