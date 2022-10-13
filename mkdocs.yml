@@ -89,7 +89,13 @@ nav:
 
     - Networking:
       - Index: Topics/Networking/index.md
-      
+      - Basic Networking Commands: Topics/Networking/Basic Networking Commands.md
+      - Managing Hostname: Topics/Networking/Managing Hostname.md
+      - Managing Network Services: Topics/Networking/Managing Network Services.md
+      - Managing NTP: Topics/Networking/Managing NTP.md
+      - Managing Routes: Topics/Networking/Managing Routes.md
+      - Managing the Firewall: Topics/Networking/Managing the Firewall.md
+
     - Service Configuration:
       - Index: Topics/Service_Configuration/index.md
 
