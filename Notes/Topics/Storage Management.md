@@ -9,4 +9,4 @@
 - [ ] [[Managing Quotas]]
 - [ ] [[Managing RAID]]
 - [ ] [[Managing Storage Partitions]]
-- [ ] [[Managing Swap Space]]
+- [o] [[Managing Swap Space]]
