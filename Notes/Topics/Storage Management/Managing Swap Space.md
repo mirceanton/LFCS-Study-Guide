@@ -20,7 +20,27 @@ chmod 600 /swap
 mkswap /swap
 ```
 
+- Enable a swap device
+```bash
+swapon /swap
+```
+
 - Disable a swap device
 ```bash
 swapoff /swap
+```
+
+- Increase swapfile size
+```bash
+# Stop using swap file
+sudo swapoff /swapfile
+
+# Increase swapfile size by 1G
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 oflag=append
+
+# Re-format it as swap
+sudo mkswap /swapfile
+
+# Start using swap again
+sudo swapon /swapfile
 ```

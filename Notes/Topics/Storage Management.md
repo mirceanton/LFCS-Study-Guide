@@ -2,11 +2,11 @@
 
 ## Topics
 
-- [ ] [[Advanced File System Permissions]]
-- [ ] [[Managing Encrypted Storage]]
-- [ ] [[Managing File Systems]]
-- [ ] [[Managing LVM]]
-- [ ] [[Managing Quotas]]
-- [ ] [[Managing RAID]]
-- [ ] [[Managing Storage Partitions]]
+- [o] [[Advanced File System Permissions]]
+- [o] [[Managing Encrypted Storage]]
+- [o] [[Managing File Systems]]
+- [o] [[Managing LVM]]
+- [o] [[Managing Quotas]]
+- [o] [[Managing RAID]]
+- [o] [[Managing Storage Partitions]]
 - [o] [[Managing Swap Space]]
