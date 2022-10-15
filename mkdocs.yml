@@ -101,3 +101,11 @@ nav:
 
     - Storage Management:
       - Index: Topics/Storage_Management/index.md
+      - Managing Storage Partitions: Topics/Storage_Management/Managing Storage Partitions.md
+      - Managing Swap Space: Topics/Storage_Management/Managing Swap Space.md
+      - Managing File Systems: Topics/Storage_Management/Managing File Systems.md
+      - Managing LVM: Topics/Storage_Management/Managing LVM.md
+      - Advanced File System Permissions: Topics/Storage_Management/Advanced File System Permissions.md
+      - Managing RAID: Topics/Storage_Management/Managing RAID.md
+      - Managing Encrypted Storage: Topics/Storage_Management/Managing Encrypted Storage.md
+      - Managing Quotas: Topics/Storage_Management/Managing Quotas.md
