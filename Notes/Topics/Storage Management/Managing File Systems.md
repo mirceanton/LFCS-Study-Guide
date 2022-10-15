@@ -152,7 +152,7 @@ sudo systemctl enable --now autofs
       - `--timeout=400` the number of seconds the fs is unused before unmounting
 
     ```bash
-    #auto.shares
+    $cat /etc/auto.shares
     dir  -fstype=auto 127.0.0.1:/etc
     ```
 
