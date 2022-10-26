@@ -32,6 +32,11 @@ sudo xfs_admin -L "newLabel" /dev/sda
 sudo xfs_admin -l /dev/sda
 ```
 
+- Repair an xfs partition
+```bash
+sudo xfs_repair -v /dev/sdb1
+```
+
 ## EXT4
 
 - Creating an EXT4 filesystem
@@ -62,6 +67,11 @@ sudo tune2fs -L "newLabel" /dev/sda
 - Show label of ext4 partition
 ```bash
 sudo tune2fs -l /dev/sda
+```
+
+- Repair ext4 partition
+```bash
+sudo fsck.ext4 -v -f -p /dev/sdb2
 ```
 
 ## Mounting File Systems
