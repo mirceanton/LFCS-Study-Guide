@@ -45,3 +45,5 @@ echo "- Format markdown"
 find docs/ -type f -exec sed -i 's/\[\[//g' {} \;
 find docs/ -type f -exec sed -i 's/\]\]//g' {} \;
 find docs/ -type f -exec sed -i 's/\[o\]/\[x\]/g' {} \;
+
+tree docs/
