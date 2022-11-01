@@ -1,27 +1,73 @@
 # Managing Virtual Machines
 
-- install tools: `sudo dng install libvirt qemu-kvm`
+- Install required tools:
   - `libvirt` -> utilities to interact with VMs
   - `qemu-kvm` -> actually runs virtual machines
+```bash
+sudo dnf install libvirt qemu-kvm
+```
 
-- create a new VM from an xml file: `virsh define file.xml`
-- delete VM: `virsh undefine <VM name>` (keeps storage, see `virsh help undefine` for more options)
+- Create a new VM from an xml file
+```bash
+virsh define file.xml
+```
 
-- show information on a VM: `virsh dominfo <VM name>`
+- Delete a VM
+```bash
+virsh undefine <VM name> # keeps storage, see `virsh help undefine` for more options
+```
 
-- show active VMs: `virsh list`
-- show all VMs: `virsh list --all`
+- Show information of a VM
+```bash
+virsh dominfo <VM name>
+```
 
-- start VM: `virst start <VM name>`
-- shutdown VM: `virst shutdown <VM name>` (graceful shutdown)
-- poweroff VM: `virst destroy <VM name>` (force shutdown)
-- reboot VM: `virst reboot <VM name>` (graceful reboot)
-- reset VM: `virst reset<VM name>` (force reboot)
+- Show active VMs
+```bash
+virsh list
+```
 
-- set VM to start on server boot: `virsh autostart <VM name>`
-- disable VM to start on server boot: `virsh autostart --disable <VM name>`
+- Show all VMs
+```bash
+virsh list --all
+```
 
-- set number of CPUs for VM:
+- Start VM
+```bash
+virsh start <VM name>
+```
+
+- Shutdown VM
+```bash
+virsh shutdown <VM name> # graceful shutdown
+```
+
+- Poweroff VM
+```bash
+virsh destroy <VM name> # force shutdown
+```
+
+- Reboot VM
+```bash
+virsh reboot <VM name> # graceful reboot
+```
+
+- Reset VM
+```bash
+virsh reset<VM name> # force reboot
+```
+
+- Set VM to start on server boot
+```bash
+virsh autostart <VM name>
+```
+
+- Disable VM to start on server boot
+```bash
+virsh autostart --disable <VM name>
+```
+
+- Set number of CPUs for VM
 ```bash
 virsh setvcpus <VM name> <cpu count> --config --maximum
 virsh setvcpus <VM name> <cpu count> --config
@@ -29,9 +75,9 @@ virsh poweroff <VM name>
 virsh start <VM name>
 ```
 
-- set memory for VM:
+- Set memory for VM
 ```bash
-svirsh setmaxmem <VM name> --size <mem>M --config
+virsh setmaxmem <VM name> --size <mem>M --config
 virsh poweroff <VM name>
 virsh start <VM name>
 ```

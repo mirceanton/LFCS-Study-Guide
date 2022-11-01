@@ -1,19 +1,58 @@
 # Managing (Docker) Containers
 
-- installing: `sudo dnf install docker`
+- Install docker (container engine)
+```bash
+sudo dnf install docker
+```
 
-- modify configured registries: `sudo vim /etc/containers/registries.conf`
+- Modify configured registries
+```bash
+sudo vim /etc/containers/registries.conf
+```
 
-- pull a docker image: `docker pull nginx`
-- show docker images: `docker image ls`
-- remove docker image: `docker image rm nginx`
+- Pull (download) a docker image
+```bash
+docker pull nginx
+```
 
-- run a nginx container: `docker run -d nginx --name=mynginx`
-- stop a running container: `docker stop mynginx`
-- start a stopped container: `docker start mynginx`
-- delete a container: `docker rm mynginx`
+- Show downloaded docker images
+```bash
+docker image ls
+```
 
-- show running containers: `docker ps`
-- show all containers: `docker ps -a`
+- Remove a docker image
+```bash
+docker image rm nginx
+```
+
+- Run a nginx container
+```bash
+docker run -d nginx --name=mynginx
+```
+
+- Stop a running container
+```bash
+docker stop mynginx
+```
+
+- Start a stopped container
+```bash
+docker start mynginx
+```
+
+- Delete a container
+```bash
+docker rm mynginx
+```
+
+- Show running containers
+```bash
+docker ps
+```
+
+- Show all containers
+```bash
+docker ps -a
+```
 
 > See the [official commandline reference](https://docs.docker.com/engine/reference/commandline/docker/)

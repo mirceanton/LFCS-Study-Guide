@@ -1,24 +1,72 @@
 # Managing SELinux
 
-- SELinux context label format: `user:role:type:level`
+SELinux context label format: `user:role:type:level`
 
-- show SELinux file context: `ls -Z`
-- show SELinux process context: `ps axZ`
-- show security context for the current user: `id -Z`
+- Show SELinux file context
+```bash
+ls -Z
+```
 
-- show SELinux mappings for users: `sudo semanage login -l`
-- show all SELinux users and their roles: `sudo semanage user -l`
+- Show SELinux process context
+```bash
+ps axZ
+```
 
-- check if SELinux is enabled: `sudo getenforce`
-  - enforcing -> active
-  - permissive -> active but only logging
-  - disabled -> not active
+- Show security context for the current user
+```bash
+id -Z
+```
 
-- temporarily enable/disable SELinux: `sudo setenforce 0/1`
+- Show SELinux mappings for users
+```bash
+sudo semanage login -l
+```
 
-- set SELinux context for a file: `chcon <context> <file>`
-- set SELinux context for a file using another as a reference: `chcon --reference=<ref file> <target file>`
-- change SELinux user for a file: `chcon -u <user> <file>`
-- change SELinux role for a file: `chcon -r <role> <file>`
-- change SELinux type for a file: `chcon -t <type> <file>`
-- change SELinux level for a file: `chcon -l <level> <file>`
+- Show all SELinux users and their roles
+```bash
+sudo semanage user -l
+```
+
+- Check if SELinux is enabled
+```bash
+sudo getenforce
+```
+> Enforcing status:
+>  - enforcing -> active
+>  - permissive -> active but only logging
+>  - disabled -> not active
+
+- Temporarily enable/disable SELinux
+```bash
+sudo setenforce 0/1
+```
+
+- Set SELinux context for a file
+```bash
+chcon <context> <file>
+```
+
+- Set SELinux context for a file using another as a reference
+```bash
+chcon --reference=<ref file> <target file>
+```
+
+- Change SELinux user for a file
+```bash
+chcon -u <user> <file>
+```
+
+- Change SELinux role for a file
+```bash
+chcon -r <role> <file>
+```
+
+- Change SELinux type for a file
+```bash
+chcon -t <type> <file>
+```
+
+- Change SELinux level for a file
+```bash
+chcon -l <level> <file>
+```

@@ -1,30 +1,74 @@
+# Managing HTTP Servers
+
 ## Configure an HTTP Server
 
-- install: `sudo dnf install httpd`
-- allow http ports: `sudo firewalld-cmd --add-service=http --permanent`
+- Install an HTTP server
+```bash
+sudo dnf install httpd
+```
 
-- install ssl package: `sudo dnf install mod_ssl`
-- allow http ports: `sudo firewalld-cmd --add-service=https --permanent`
+- Enable and start the server
+```bash
+sudo systemctl enable --now httpd
+```
 
-- enable and start server: `sudo systemctl enable --now httpd`
+- Allow HTTP traffic through firewall
+```bash
+sudo firewalld-cmd --add-service=http --permanent
+```
 
-- core configuring the server: `sudo vim /etc/httpd/conf/httpd.conf`
-  - change http port
-  - change bind address
-  - set server name (domain)
-  - set document root
-- additional configuring the server: `sudo vim /etc/httpd/conf.d/...`
-  - configure ssl: `sudo vim /etc/httpd/conf.d/ssl.conf`
-    - change https port
-- manage modules: `sudo vim /etc/httpd/conf.modules.d/...`
+- Install the SSL package
+```bash
+sudo dnf install mod_ssl
+```
 
-- seeing the options: `man httpd.conf`
-- check config: `apachectl configtest`
-- apply config: `sudo systemctl reload httpd`
+- Allow HTTPS traffic through firewall
+```bash
+sudo firewalld-cmd --add-service=https --permanent
+```
+
+- Edit the core configuring the server
+```bash
+sudo vim /etc/httpd/conf/httpd.conf
+```
+
+> Typical actions:  
+>  - change http port
+>  - change bind address
+>  - set server name (domain)
+>  - set document root
+
+- Edit additional tunables for the server
+```bash
+sudo vim /etc/httpd/conf.d/...
+```
+> Typical actions:  
+>  - configure SSL: `sudo vim /etc/httpd/conf.d/ssl.conf`
+>  - change https port
+
+- Manage installed modules
+```bash
+sudo vim /etc/httpd/conf.modules.d/...
+```
+
+- seeing the options
+```bash
+man httpd.conf
+```
+
+- Verify the config
+```bash
+sudo apachectl configtest
+```
+
+- Apply the config
+```bash
+sudo systemctl reload httpd
+```
 
 **Example**:
 
-- configure a private website at `blog.example.local` found at `/var/www/internal/blog`; and an external website at `public.example.com` found at `/var/www/public/`
+- Configure a private website at `blog.example.local` found at `/var/www/internal/blog`; and an external website at `public.example.com` found at `/var/www/public/`
 
 ```bash
 #/var/httpd/conf.d/config.conf
@@ -40,7 +84,7 @@
 </VirtualHost>
 ```
 
-- define a new website that uses SSL with the certificate at `/opt/site.cert` and the key at `/opt/site.key`
+- Define a new website that uses SSL with the certificate at `/opt/site.cert` and the key at `/opt/site.key`
 
 ```bash
 #/var/httpd/conf.d/ssl-site.conf
@@ -53,23 +97,27 @@
 </VirtualHost>
 ```
 
-# Configure HTTP server log files
+## Configure HTTP server log files
 
 - httpd keeps 2 logs:
   - event log: `/var/log/httpd/access.log`
   - access log: `/var/log/httpd/error.log`
 
-- edit config: `sudo vim /etc`:
-  - change error log path: `ErrorLog "/path/to/error/file.log"`
-  - set log level: `LogLevel ...`
+- Edit config
+```bash
+sudo vim /etc/httpd/conf/httpd.conf
+```
+> Typical actions:  
+>  - change error log path: `ErrorLog "/path/to/error/file.log"`
+>  - set log level: `LogLevel ...`
 
-# Restrict access to a web page
+## Restrict access to a web page
 
-- restricting access is done within the `<Directory>` directive
+-Restricting access is done within the `<Directory>` or `<File>` directives
 
 **Examples**:
 
-- put the `/admin` path behind basic auth; create user john for it
+- Put the `/admin` path behind basic auth; create user john for it
 
 ```bash
 sudo htpasswd -c /etc/httpd/passwords john;

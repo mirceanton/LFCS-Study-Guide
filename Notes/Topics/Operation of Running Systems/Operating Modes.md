@@ -1,11 +1,21 @@
 # Operating Modes
 
-- default boot target: `systemctl get-default`
-- change default boot target: `systemctl set-default ...`
-- switch to a different target for the current session: `systemctl isolate ...`
+- Show the default boot target
+```bash
+systemctl get-default
+```
 
-other targets:
+- Change the default boot target
+```bash
+systemctl set-default ...
+```
 
+- Switch to a different target for the current session
+```bash
+systemctl isolate ...
+```
+
+Other targets:
 - graphical -> GUI target
 - multi-user -> terminal target
 - emergency -> loads as little services as possible

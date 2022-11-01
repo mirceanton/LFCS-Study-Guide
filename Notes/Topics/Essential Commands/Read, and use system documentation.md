@@ -1,6 +1,6 @@
 # Read, and use system documentation
 
-## If we know what command to use
+## If you know what command to use
 
 ### Use the `--help` flag on most commands
 

@@ -14,6 +14,12 @@
 
 ## Configure
 
-`sudo vim /etc/default/grub`
+- Edit the configuration file
+```bash
+sudo vim /etc/default/grub
+```
 
-`sudo update-grub` or `grub2-mkconfig -o ...`
+- Generate a new grub config based on the configuration file:
+```bash
+grub2-mkconfig -o ... # see above examples
+```

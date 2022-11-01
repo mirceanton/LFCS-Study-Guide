@@ -1,11 +1,36 @@
 # Managing Available Resources
 
-- show overall disk usage: `df -h`
-- show disk usage for a directory: `du -sh /bin/`
+- Show overall disk usage
+```bash
+df -h
+```
 
-- show available memory: `free -h`
+- Show disk usage for a particular directory
+```bash
+du -sh /bin/
+```
 
-- show cpu uptime: `uptime`
-- show cpu details: `lscpu`
-- show pci device details: `lspci`
-- show usb devices: `lsusb`
+- Show available memory
+```bash
+free -h
+```
+
+- Show cpu uptime
+```bash
+uptime
+```
+
+- Show cpu details
+```bash
+lscpu
+```
+
+- Show pci device details
+```bash
+lspci
+```
+
+- Show usb devices
+```bash
+lsusb
+```

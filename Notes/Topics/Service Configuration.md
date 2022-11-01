@@ -2,10 +2,10 @@
 
 ## Topics
 
-- [ ] [[Database]]
-- [ ] [[DNS]]
-- [ ] [[HTTP]]
-- [ ] [[IMAP]]
-- [ ] [[Containers]]
-- [ ] [[Virtual Machines]]
-- [ ] [[SSH]]
+- [o] [[Database]]
+- [o] [[DNS]]
+- [o] [[HTTP]]
+- [o] [[IMAP]]
+- [o] [[Containers]]
+- [o] [[Virtual Machines]]
+- [o] [[SSH]]

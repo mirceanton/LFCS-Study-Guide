@@ -1,28 +1,101 @@
 # Manage Processes
 
-- show running processes in the current session: `ps`
-- show all running processes: `ps aux`
+- Show running processes in the current session
+```bash
+ps
+```
 
-- task manager-style output: `top` / `htop`
-- show details for a given process: `ps u <PID>`
-- show processes started by user: `ps u -U <username>`
-- show processes by name: `pgrep -a ...`
+- Show all running processes
+```bash
+ps aux
+```
 
-- start process with a given nice value: `nice -n <value> <command>`
-- show nice values in `ps`: `ps lax`
-- show tree-like structure: `ps faux`
+- Task manager-style output
+```bash
+top
+```
 
-- change nice value of process: `renice <nice value> <PID>`
+- Show details for a given process
+```bash
+ps u <PID>
+```
 
-- show signals that can be sent to a process: `kill -L`
-- send signal to process: `kill -<SIGNAL> <PID>`
-- kill process based on name: `pkill <name>`
-- send signal to all processes that contain `<NAME>` in their name: `pkill -<SIGNALL> <NAME>`
+- Show processes started by user
+```bash
+ps u -U <username>
+```
 
-- send process to background: `<command> &`
-- check background processes: `jobs`
-- get process from background: `fg <JOB NUMBER>`
-- resume frozen background process: `bg <JOB NUMBER>`
+- Show processes by name
+```bash
+pgrep -a ...
+```
 
-- show files used by process: `lsof -p <PID>`
-- show processes using a file: `lsof <filepath>`
+- Start process with a given nice value
+```bash
+nice -n <value> <command>
+```
+
+- Show nice values in `ps`
+```bash
+ps lax
+```
+
+- Show tree-like structure
+```bash
+ps faux
+```
+
+- Change nice value of process
+```bash
+renice <nice value> <PID>
+```
+
+- Show signals that can be sent to a process
+```bash
+kill -L
+```
+
+- Send signal to process
+```bash
+kill -<SIGNAL> <PID>
+```
+
+- Kill process based on name
+```bash
+pkill <name>
+```
+
+- Send signal to all processes that contain `<NAME>` in their name
+```bash
+pkill -<SIGNALL> <NAME>
+```
+
+- Send process to background
+```bash
+<command> &
+```
+
+- Show all background processes
+```bash
+jobs
+```
+
+- Get process from background
+```bash
+fg <JOB NUMBER>
+```
+
+- Resume a frozen background process
+```bash
+bg <JOB NUMBER>
+```
+
+- Show files used by process
+```bash
+lsof -p <PID>
+```
+
+- Show processes using a file
+```bash
+lsof <filepath>
+```

@@ -1,17 +1,60 @@
 # Boot, Reboot and Shutdown
 
-- rebooting a system: `sudo systemctl reboot`
-- rebooting a system: `sudo systemctl reboot --force`
-- rebooting a system: `sudo systemctl reboot --force --force`
+## (Force) (force) reboot or shutdown
 
-- shutting down a system: `sudo systemctl poweroff`
-- shutting down a system: `sudo systemctl poweroff --force`
-- shutting down a system: `sudo systemctl poweroff --force --force`
+- Rebooting a system
+```bash
+sudo systemctl reboot
+```
 
-- scheduling a shutdown at 2AM: `sudo shutdown 02:00`
-- shutdown in 20 minutes: `sudo shutdown +15`
-- reboot in 10 minutes: `sudo shutdown -r +10`
+- Force rebooting a system (don't give programs a chance to gracefully end)
+```bash
+sudo systemctl reboot --force
+```
 
-- setting a wall message: `sudo shutdown -r +6 'this is the wall message'`
+- Force restart a system (as if unplugging and replugging the power cord)
+```bash
+sudo systemctl reboot --force --force
+```
 
-- canceling a pending shutdown: `sudo shutdown -c`
+- Shut down a system
+```bash
+sudo systemctl poweroff
+```
+
+- Force shut down a system  (don't give programs a chance to gracefully end)
+```bash
+sudo systemctl poweroff --force
+```
+
+- Force kill a system (as if unplugging the power cord)
+```bash
+sudo systemctl poweroff --force --force
+```
+
+## Scheduled reboot and/or shut down
+
+- Schedule a shutdown at 2AM
+```bash
+sudo shutdown 02:00
+```
+
+- Schedule a shutdown in 20 minutes:
+```bash
+sudo shutdown +15
+```
+
+- Schedule a reboot in 10 minutes:
+```bash
+sudo shutdown -r +10
+```
+
+- Reboot with a wall message:
+```bash
+sudo shutdown -r +6 'this is the wall message'
+```
+
+- Cancel a pending shutdown:
+```bash
+sudo shutdown -c
+```

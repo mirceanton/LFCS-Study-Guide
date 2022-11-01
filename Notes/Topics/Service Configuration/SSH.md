@@ -2,9 +2,21 @@
 
 ## SSH Server
 
-- managing the server: `vim /etc/ssh/sshd_config`
+- Managing the SSH server config
+```bash
+vim /etc/ssh/sshd_config
+```
 
-- add custom settings for a given user:
+> Typical actions:  
+>  - change port
+>  - change listen address
+>  - listen on ipv4/ipv6 (inet/inet6)
+>  - allow/disallow root login
+>  - allow/disallow password login
+>  - allow/disallow key-based login
+>  - etc.
+
+- Add custom settings for a given user
 ```bash
 ...
 Match User <username>
@@ -12,37 +24,40 @@ Match User <username>
 ...
 ```
 
-- reload sshd settings: `sudo systemctl reload sshd`
-
-**Examples**:
-- change port
-- change listen address
-- listen on ipv4/ipv6 (inet/inet6)
-- allow/disallow root login
-- allow/disallow password login
-- allow/disallow key-based login
-- etc.
+- Reload sshd settings
+```bash
+sudo systemctl reload sshd
+```
 
 ## SSH Client
 
-- managing the global client settings:
-  ```bash
-  vim /etc/ssh/ssh_config # NOT RECOMMENDED
-  vim /etc/ssh/ssh_config.d/99-custom-settings.conf # <-- RECOMMENDED
-  ```
+- Manage the global SSH client settings:
+```bash
+vim /etc/ssh/ssh_config # NOT RECOMMENDED
+vim /etc/ssh/ssh_config.d/99-custom-settings.conf # <-- RECOMMENDED
+```
 
 - Creating a static config for ssh hosts: `vim ~/.ssh/config`
-  ```bash
-  # ~/.ssh/config
-  Host myhostname
-    HostName 1.2.3.4
-    Port 2222
-    User myuser
-  # now we can use: ssh myhostname
-  ```
+```bash
+# ~/.ssh/config
+Host myhostname
+  HostName 1.2.3.4
+  Port 2222
+  User myuser
+# now we can use: ssh myhostname
+```
 
-- generate new key pair: `ssh-keygen`
+- Generate a new SSH key pair
+```bash
+ssh-keygen
+```
 
-- copy ssh public key to server: `ssh-copy-id user@hostname`
+- Copy the SSH public key to a server for key-based auth
+```bash
+ssh-copy-id user@hostname
+```
 
-- removing a saved fingerprint: `ssh-keygen -R hostname`
+- Remove a saved fingerprint
+```bash
+ssh-keygen -R hostname
+```

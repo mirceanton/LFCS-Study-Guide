@@ -2,18 +2,48 @@
 
 ## Configuring a DNS server
 
-- install: `sudo dnf install bind bind-utils`
-- enable service: `sudo systemctl enable --now named`
-- allow traffic: `sudo firewall-cmd --add-service=dns --permanent`
+- Install a DNS server
+```bash
+sudo dnf install bind bind-utils
+```
 
-- configure: `sudo vim /etc/named.conf`
-- to see options: `man named.conf`
+- Enable the service
+```bash
+sudo systemctl enable --now named
+```
 
-- test dns resolution: `dig @127.0.0.1 google.com`
+- Allow traffic through firewall
+```bash
+sudo firewall-cmd --add-service=dns --permanent
+```
+
+- Edit the `bind` configuration file
+```bash
+sudo vim /etc/named.conf
+```
+
+- Check the manpages for more options
+```bash
+man named.conf
+```
+
+- Test dns resolution
+```bash
+dig @127.0.0.1 google.com
+```
 
 ## Maintaining a DNS Zone
 
-- `sudo vim /etc/named.conf`
+- Edit the configuration file for DNS zones:
+```bash
+sudo vim /etc/named.conf
+```
+- Reload after configuration change
+```bash
+sudo systemctl restart named
+```
+
+**DNS Zone Example**:
 
 ```bash
 # ...
@@ -51,9 +81,7 @@ mail2     A       1.2.3.7
 @         TXT   "lorem ipsum dolor ihmet"
 ```
 
-- reload config change: `sudo systemctl restart named`
-
----
+**Extra tips and tricks**:
 
 - allow query from given network: `allow-query { 0.0.0.0/24; };`
 - check dns records for a given domain on the local dns server: `dig @localhost name.com ANY`

@@ -12,11 +12,30 @@ Tools:
 
 Sample jobs syntax: `cat /etc/crontab`
 
-- show crontab for current user: `crontab -l`
-- edit crontab for current user: `crontab -e`
-- edit crontab for a given user: `crontab -e -u <user>`
-- remove crontab for current user: `crontab -r`
-- remove crontab for a given user: `crontab -r -u <user>`
+- Show the crontab for the current user
+```bash
+crontab -l
+```
+
+- Edit the crontab for the current user
+```bash
+crontab -e
+```
+
+- Edit the crontab for a given user
+```bash
+crontab -e -u <user>
+```
+
+- Remove the crontab for the current user
+```bash
+crontab -r
+```
+
+- Remove the crontab for a given user
+```bash
+crontab -r -u <user>
+```
 
 **Examples**:
 
@@ -29,20 +48,54 @@ Sample jobs syntax: `cat /etc/crontab`
 
 ## Anacron
 
-- edit anacrontab: `vim /etc/anacrontab`
-- verify anacrontab: `anacron -T`
-- force anacron to run jobs for today: `anacron -n -f`
+- Edit anacrontab
+```bash
+vim /etc/anacrontab
+```
 
-**Examples**:
+- Verify anacrontab
+```bash
+anacron -T
+```
+
+- Force anacron to run jobs for today
+```bash
+anacron -n -f
+```
 
 ## At
 
-- run job at 3PM: `at 15:00`
-- run job on specific date: `at 'September 15 2023'`
-- run job on specific date, at specific time: `at '15:00 September 15 2023'`
-- run job in 10 minutes: `at 'now + 10 minutes'`
+- run job at 3PM
+```bash
+at 15:00
+```
 
-- see scheduled jobs: `atq`
+- run job on specific date
+```bash
+at 'September 15 2023'
+```
 
-- inspect job: `at -c <job number>`
-- remove scheduled job: `atrm <job number>`
+- run job on specific date
+```bash
+at specific time: `at '15:00 September 15 2023'
+```
+
+- run job in 10 minutes
+```bash
+at 'now + 10 minutes'
+```
+
+- See scheduled jobs
+```bash
+atq
+```
+
+- Inspect job
+```bash
+at -c <job number>
+```
+
+- Remove scheduled job
+```bash
+atrm <job number>
+```
