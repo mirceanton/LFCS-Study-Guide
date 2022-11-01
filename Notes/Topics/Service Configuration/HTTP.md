@@ -33,18 +33,18 @@ sudo vim /etc/httpd/conf/httpd.conf
 ```
 
 > Typical actions:  
->  - change http port
->  - change bind address
->  - set server name (domain)
->  - set document root
+>  - change http port  
+>  - change bind address  
+>  - set server name (domain)  
+>  - set document root  
 
 - Edit additional tunables for the server
 ```bash
 sudo vim /etc/httpd/conf.d/...
 ```
 > Typical actions:  
->  - configure SSL: `sudo vim /etc/httpd/conf.d/ssl.conf`
->  - change https port
+>  - configure SSL: `sudo vim /etc/httpd/conf.d/ssl.conf`  
+>  - change https port  
 
 - Manage installed modules
 ```bash
@@ -108,8 +108,8 @@ sudo systemctl reload httpd
 sudo vim /etc/httpd/conf/httpd.conf
 ```
 > Typical actions:  
->  - change error log path: `ErrorLog "/path/to/error/file.log"`
->  - set log level: `LogLevel ...`
+>  - change error log path: `ErrorLog "/path/to/error/file.log"`  
+>  - set log level: `LogLevel ...`  
 
 ## Restrict access to a web page
 

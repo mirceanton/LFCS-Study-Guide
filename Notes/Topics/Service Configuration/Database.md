@@ -30,9 +30,9 @@ mysql -u root -p
 sudo vim /etc/my.cnf.d/mariadb-server.cnf
 ```
 
-> Typical actions for the config file:
->  - set data directory
->  - set socket
->  - set log file
->  - set `bind-address` (default `0.0.0.0`)
->  - set port by configuring the `port=...` directive under `[mysqld]`
+> Typical actions:  
+>  - set data directory  
+>  - set socket  
+>  - set log file  
+>  - set `bind-address` (default `0.0.0.0`)  
+>  - set port by configuring the `port=...` directive under `[mysqld]`  

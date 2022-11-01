@@ -8,13 +8,12 @@ vim /etc/ssh/sshd_config
 ```
 
 > Typical actions:  
->  - change port
->  - change listen address
->  - listen on ipv4/ipv6 (inet/inet6)
->  - allow/disallow root login
->  - allow/disallow password login
->  - allow/disallow key-based login
->  - etc.
+>  - change port  
+>  - change listen address  
+>  - listen on ipv4/ipv6 (inet/inet6)  
+>  - allow/disallow root login  
+>  - allow/disallow password login  
+>  - allow/disallow key-based login  
 
 - Add custom settings for a given user
 ```bash

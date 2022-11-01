@@ -21,8 +21,8 @@ sudo vim /etc/dovecot/dovecot.conf
 ```
 
 > Typical actions:  
->  - protocols
->  - bind address
+>  - protocols  
+>  - bind address  
 
 - Additional config files are found at `/etc/dovecot/conf.d/`
 
@@ -69,9 +69,9 @@ sudo vim /etc/alias
 ```
 
 > Typical actions:  
->  - alias sales to mike: `sales: mike`
->  - alias support to mike and tony: `support: mike,tony`
->  - alias external to mike@somedomain.tld: `external: mike@somedomain.tld`
+>  - alias sales to mike: `sales: mike`  
+>  - alias support to mike and tony: `support: mike,tony`  
+>  - alias external to mike@somedomain.tld: `external: mike@somedomain.tld`  
 
 - Reload aliases
 ```bash
